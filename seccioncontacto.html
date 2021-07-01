@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./stylecontacto.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" height="30" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./smtgamming.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./seccionnosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./articulo.html">Articulo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                    </li>
+                </ul>
+                <i class="fas fa-gamepad fs-2 me-1"></i>
+                <form class="d-flex">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                        Iniciar Sesion
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Imagen Header -->
+    <div>
+
+        <img class="imagen-contacto" src="https://fundacionaprenderamirar.files.wordpress.com/2017/11/guia-videojuegos-adiccion.jpg?w=1920&h=768&crop=1" alt="">
+    </div>
+
+    <!-- Título y párrafo -->
+
+    <div class="container text-center contenido pt-3">
+        <h1>Contacta con nosotros</h1>
+
+
+        <h3 class="p-5">Tenes alguna consulta o querés realizar una solicitud acerca de algún contenido? <br> En ésta
+            sección encontraras la
+            forma mas sencilla de contactarnos, no dudes en dejar tu comentario. </h3>
+    </div>
+    <!-- Formulario -->
+
+    <div class="p-6 contenido fs-4 textform">
+        <form class="container mb-5">
+            <div class="mb-3  fs-3">
+                <div class="mb-3 fs-3">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Escribe Tu Nombre" required>
+                </div>
+                <div class="mb-3 fs-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Nombre@ejemplo.com" required>
+                </div>
+                <div class=" mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                        placeholder="Escribe aqui tu comentario" rows="3"></textarea required>
+                </div>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Por Favor, seleccione una Opción . . . </option>
+                        <option value="1">Juegos</option>
+                        <option value="2">Consolas</option>
+                        <option value="3">Accesorios</option>
+                        <option value="3">Otros</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Motivo de Contacto</label>
+                </div>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalForm">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- MODAL-CONTACTO -->
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Gracias Por tu comentario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tu Comentario fue enviado correctamente, te responderemos a la brevedad.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <!-- Modal Login -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">User</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#modalRegistro">
+                            Registrarse
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Registro -->
+    <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Direccion de Correo</label>
+                            <input type="email" class="form-control" id="inputEmail4"
+                                placeholder="smtgaming@gmail.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="inputAddress"
+                                placeholder="Av. Sarmiento 1234">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Pais</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">C.P</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">Sexo</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Selecciona..</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>No Binario</option>
+                                <option>Pokemon</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Recordarme Usuario
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Crear Nueva Cuenta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!--FOOTER-->
+    <footer class="bg-dark text-white pt-5 pb-4">
+
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">SMT Gaming</h5>
+                    <p>No se trata de cambiar el mundo. Se trata de hacer nuestro mejor esfuerzo para dejar el mundo
+                        como está. Se trata de respetar la voluntad de los demás y creer en la tuya.</p>
+
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Enlaces Útiles</h5>
+                    <p>
+                        <a href="https://www.nintendo.com/es_AR/" class="text-white" style="text-decoration: none;"> Nintendo</a>
+                    </p>
+                    <p>
+                        <a href="https://www.microsoft.com/es-ar" class="text-white" style="text-decoration: none;"> Microsoft</a>
+                    </p>
+                    <p>
+                        <a href="https://www.playstation.com/es-ar/" class="text-white" style="text-decoration: none;">Playstation</a>
+                    </p>
+                    <p>
+                        <a href="https://ncs.io/" class="text-white" style="text-decoration: none;"> Música Gaming</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contacto</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> Tucumán, San Miguel de Tucuman 4000, ARG.
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> Smtgaming@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +54 3816524635
+                    </p>
+                    <p>
+                        <i class="fas fa-print	 mr-3"></i> 54.1.319.1611
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-7 col-lg-8">
+                    <p> Copyright ©2021 Todos los Derechos Reservados:
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-danger">SMT Gaming</strong>
+                        </a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.google.com.ar/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-google-plus"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://ar.linkedin.com/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/289fb0f140.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="indexnosotros.js"></script>
+</body>
+
+</html>

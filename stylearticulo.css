@@ -1,0 +1,47 @@
+.btn {
+    background-color: red;
+}
+.fa-gamepad {
+    color: red;
+}
+.imagen-central {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 7px solid red;
+}
+.img-art{
+    width: 430px;
+    transition: 400ms;
+}
+
+.img-art:hover {
+    /* -webkit-transform: scale(1.5); */
+    transform: scale(1.05)
+    
+}
+
+.tab-content-border{
+    border: 1px solid;
+    border-radius: 0 0 10px 10px;
+    border-color: #fff #dee2e6 #dee2e6 #dee2e6;
+}
+
+.linea-art{
+    height: 5px;
+    width: 100%;
+    background: red;
+    align-content: center;
+}
+
+.tab-noticia{
+    color: red;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid;
+    
+    
+}
+

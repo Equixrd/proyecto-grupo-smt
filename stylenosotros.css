@@ -1,0 +1,59 @@
+.btn {
+    background-color: red;
+}
+footer {
+    width: 100%;
+    bottom: 0;
+}
+.fa-gamepad {
+    color: red;
+}
+.acordeon-img1{
+
+    background-image: url(https://cdn.hipwallpaper.com/i/47/61/YqMhSE.jpg);
+    background-repeat: repeat-x ;
+}
+
+.tamañologo{
+    width: 100px;
+    animation: mover 3s infinite;
+}
+
+@keyframes mover {
+    0% {transform: rotateZ(8deg)}
+    50%{transform: rotateZ(-8deg);}
+    100%{transform: rotateZ(8deg);}
+}
+
+.opacidad{
+    opacity: 80%;
+}
+
+.img-container{
+    position: absolute;
+    left: 20%;
+    transition: transform 450ms ease-in-out;
+    margin: 0px 20px;
+}
+
+
+.move{
+    transform: translateX(500px) rotate(360deg);
+}
+
+@media screen and (max-width: 990px) {
+
+    .img-container{
+
+        display: none !important;
+    }
+}
+
+
+/* imagen principal*/
+.imagen-central {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 7px solid rgb(255, 0, 0);
+}
